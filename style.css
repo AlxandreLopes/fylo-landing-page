@@ -18,16 +18,13 @@ body{
   background-image: url(/images/bg-intro.svg);
   background-repeat: no-repeat; 
   background-size: 100%;
-  display: grid; 
-
+  display: grid;
   grid-template-areas: 
+  
   "header"
   "illustration"
   "main";  
 }
-
-
-
 /* Grid Template */
 
 .header{
@@ -112,8 +109,7 @@ form{
   background-color: hsl(163, 95%, 43%);
   border: none;
   height: 43px;
-  width: 150px;
-  
+  width: 150px;  
   border-radius: 3px;
   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
 }
@@ -175,126 +171,6 @@ footer{
   #btn{
     width: 100% !important;
   }  
-}
-
-
-
-/* RESET */
-
-h1, p, ul {
-  margin: 0;
-  padding: 0;  
-}
-
-ul {
-  list-style: none;
-}
-
-/* General Style */
-
-body{
-  
-  margin: 0 auto;
-  padding: 0 40px 0 40px;
-  background-image: url(/images/bg-intro.svg);
-  background-repeat: no-repeat; 
-  background-size: 100%;
-  
-}
-
-/* Header */
-  
-
-nav{
-  display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
-}
-
-#socialMedia{
-  display: flex;
-  align-items: center;  
-}
-
-#socialMedia svg{
-  height: 25px;
-  fill: white;
-}
-
-li + li{
-  margin-left: 20px;
-}
-
-#illustrationMain{
-  max-width: 75%;
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-
-@media (min-width: 426px){
-  #illustrationMain{
-    margin-bottom: 150px;
-  }
-}
-
-
-/* Main */
-
-h1{
-  font-size: 1.8em;
-  
-  margin-bottom: 20px;
-}
-h1, #signUp, footer{
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  color: hsl(243, 87%, 12%);
-}
-
-#description{
-  font-family: 'Open Sans', sans-serif;
-  color: hsl(0, 0%, 50%);
-  font-weight: 400;
-  margin-bottom: 50px;
-}
-
-/* Form */
-
-form{
-  display: flex;
-  flex-direction: column;
-
-}
-
-#signUp, input{
-  margin-bottom: 20px;  
-}
-
-#box{
-  border: 1px solid hsl(0, 0%, 50%);
-  border-radius: 3px;
-  height: 40px;
-}
-
-#btn{
-  color: #fff;
-  font-weight: 700;
-  background-color: hsl(163, 95%, 43%);
-  border: none;
-  height: 40px;
-  width: 150px;
-  border-radius: 3px;
-  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer */
-
-footer{
-  float: right;
-  margin-bottom: 30px;
-  font-size: 1em;
-
 }
 
 
