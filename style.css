@@ -11,23 +11,23 @@ ul {
 
 /* General Style */
 
-body{
-  
+body{  
   margin: 0 auto;
   padding: 0 40px 0 40px;
-  background-image: url(/images/bg-intro.svg);
+  background-image: url(images/bg-intro.svg);
   background-repeat: no-repeat; 
   background-size: 100%;
   display: grid;
-  grid-template-areas: 
-  
+  grid-template-areas:   
   "header"
   "illustration"
   "main";  
 }
 /* Grid Template */
 
+
 .header{
+  
   grid-area: header;
 }
 
