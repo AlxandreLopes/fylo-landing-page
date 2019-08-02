@@ -59,11 +59,10 @@ nav{
 #socialMedia svg:hover{
   fill: transparent;
   stroke: white;
-			stroke-width: 20;
-   
+			stroke-width: 20;   
 }
 
-a + a{
+li + li{
   margin-left: 20px;
 }
 
@@ -153,6 +152,16 @@ footer{
 
   #socialMedia li svg, #logo-fylo{
     fill: hsl(243, 87%, 12%);
+  }
+
+  #socialMedia svg{    
+    transition: 0.1s ease-in-out;
+  }
+  
+  #socialMedia svg:hover{
+    fill: transparent;
+    stroke: hsl(243, 87%, 12%);
+        stroke-width: 20;   
   }
 
   #illustrationMain{
