@@ -52,15 +52,10 @@ nav{
 
 #socialMedia svg{
   height: 20px;
-  fill: white;
-  transition: 0.1s ease-in-out;
+  fill: white;  
 }
 
-#socialMedia svg:hover{
-  fill: transparent;
-  stroke: white;
-			stroke-width: 20;   
-}
+
 
 li + li{
   margin-left: 20px;
@@ -119,14 +114,7 @@ form{
   height: 43px;
   width: 150px;  
   border-radius: 3px;
-  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
-  transition: 0.2s ease-in-out;
-}
-
-#btn:hover{
-  background-color: transparent;
-  color: hsl(163, 95%, 43%);
-  border: solid 2px hsl(163, 95%, 43%);
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);  
 }
 
 /* Footer */
@@ -139,7 +127,7 @@ footer{
 
 /* Queries */
 
-@media(min-width:1440px){
+@media(min-width:1024px){
   body{
     grid-template-areas:
     "illustration header"
@@ -154,16 +142,10 @@ footer{
     fill: hsl(243, 87%, 12%);
   }
 
-  #socialMedia svg{    
-    transition: 0.1s ease-in-out;
+  #socialMedia svg{  
+    height:  30px;  
   }
   
-  #socialMedia svg:hover{
-    fill: transparent;
-    stroke: hsl(243, 87%, 12%);
-        stroke-width: 20;   
-  }
-
   #illustrationMain{
     display: flex;
     justify-content: center;    
