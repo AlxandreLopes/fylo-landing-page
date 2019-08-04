@@ -2,7 +2,7 @@
 
 h1, p, ul {
   margin: 0;
-  padding: 0;  
+  padding: 0;
 }
 
 ul {
@@ -11,78 +11,73 @@ ul {
 
 /* General Style */
 
-body{  
+body {
   margin: 0 auto;
   padding: 0 40px 0 40px;
   background-image: url(images/bg-intro.svg);
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-size: 100%;
   display: grid;
-  grid-template-areas:   
-  "header"
-  "illustration"
-  "main";  
+  grid-template-areas: "header" "illustration" "main";
 }
 
 /* Grid Template */
 
-.header{  
+.header {
   grid-area: header;
 }
 
-.illustration{
+.illustration {
   grid-area: illustration;
 }
 
-.main{
+.main {
   grid-area: main;
 }
 
 /* Header */
-nav{
+
+nav {
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
 }
 
-#socialMedia{
+#socialMedia {
   display: flex;
-  align-items: center;  
+  align-items: center;
 }
 
-#socialMedia svg{
+#socialMedia svg {
   height: 20px;
-  fill: white;  
+  fill: white;
 }
 
-
-
-li + li{
+li+li {
   margin-left: 20px;
 }
 
-#illustrationMain{
+#illustrationMain {
   width: 75%;
   margin: 0 auto;
-  margin-top: 50px; 
+  margin-top: 50px;
   margin-bottom: 35%;
 }
 
 /* Main */
 
-h1{
+h1 {
   font-size: 1.8em;
-  
   margin-bottom: 20px;
 }
 
-h1, #signUp, footer{
+h1, #signUp, footer {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   color: hsl(243, 87%, 12%);
 }
 
-#description{
+#description {
   font-family: 'Open Sans', sans-serif;
   color: hsl(0, 0%, 50%);
   font-weight: 400;
@@ -91,35 +86,37 @@ h1, #signUp, footer{
 
 /* Form */
 
-form{
-  display: grid;   
+form {
+  display: grid;
 }
 
-#signUp, input{
-  margin-bottom: 20px;  
+#signUp, input {
+  margin-bottom: 20px;
 }
 
-#box{
-  border: 1px solid hsl(0, 0%, 50%);
+#box {
+  border: none;
   border-radius: 3px;
   height: 40px;
-  font-size: 1em;  
+  font-size: 1em;
+  text-align: center;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
 }
 
-#btn{
+#btn {
   color: #fff;
   font-weight: 700;
   background-color: hsl(163, 95%, 43%);
   border: none;
   height: 43px;
-  width: 150px;  
+  width: 150px;
   border-radius: 3px;
-  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);  
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
 
-footer{
+footer {
   float: right;
   margin-bottom: 30px;
   font-size: 1em;
@@ -127,57 +124,58 @@ footer{
 
 /* Queries */
 
-@media(min-width:1024px){
-  body{
-    grid-template-areas:
-    "illustration header"
-    "illustration main";
+@media(min-width:1024px) {
+  body {
+    grid-template-areas: "illustration header" "illustration main";
     grid-template-columns: 1fr 1fr;
     background-image: none;
     padding: 0;
     height: 100vh;
   }
-
-  #socialMedia li svg, #logo-fylo{
+  #socialMedia li svg, #logo-fylo {
     fill: hsl(243, 87%, 12%);
   }
-
-  #socialMedia svg{  
-    height:  30px;  
+  #socialMedia svg {
+    height: 30px;
+    transition: .2s ease-in-out;
   }
-  
-  #illustrationMain{
+  #git svg:hover {
+    fill: #171515;
+  }
+  #linkedin svg:hover {
+    fill: #0e76a8;
+  }
+  #twitter svg:hover {
+    fill: #00acee;
+  }
+  #illustrationMain {
     display: flex;
-    justify-content: center;    
-    background-image: linear-gradient(hsl(243, 87%, 12%), hsl(243, 86%, 85%));
+    justify-content: center;
+    background-image: linear-gradient( -135deg, hsl(243, 87%, 12%), hsl(243, 86%, 85%));
     margin: 0 auto;
-    width: 100% !important;    
-    margin-top:0 !important; 
+    width: 100% !important;
+    margin-top: 0 !important;
     margin-bottom: 0 !important;
-  }  
-
-  #illustrationMain svg{    
+  }
+  #illustrationMain svg {
     width: 50%;
   }
-
-  .header, .main{
-    padding: 0 60px;    
+  .header, .main {
+    padding: 0 60px;
   }
-
-  .main{
+  .main {
     max-width: 75%;
   }
-
-  form{    
-    grid-template-columns: 2fr 1fr; 
+  form {
+    grid-template-columns: 2fr 1fr;
     justify-content: space-between;
     grid-gap: 30px;
-  }  
-
-  #btn{
+  }
+  #btn {
     width: 100% !important;
-  }  
+    transition: .2s ease-in-out;
+  }
+  #btn:hover {
+    background-color: hsl(243, 87%, 12%);
+  }
 }
-
-
-
